@@ -38,7 +38,7 @@ def call_function(user_choice):
 		quantity = int(input("Enter quantity to sell: "))
 		print(sell_product(store_dict, name, quantity))
 	elif user_choice == 4:
-		display_inventory(store_dict)
+		#display_inventory(store_dict)
 		print(display_inventory(store_dict))
 	elif user_choice == 5:
 		print(most_expensive_product(store_dict))
@@ -94,10 +94,10 @@ def display_inventory(store_dict):
 	else:
 		total_no = 0
 		for name, items in store_dict.items():
-			current
-			total_no += 1
-		print( f"\n{name}: Price = {items['price']}, Quantity = {items['quantity']}")
-			#total_no +=1
+
+			#	total_no += 1
+			print( f"{name}: Price = {items['price']}, Quantity = {items['quantity']}")
+			total_no +=1
 		return f"\nTotal Number of product in the store is: {total_no}"
 
 
