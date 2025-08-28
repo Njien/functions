@@ -92,11 +92,12 @@ def display_inventory(store_dict):
 	if len(store_dict) == 0:
 		return("Inventory is empty.")
 	else:
-		return ("\n--- Store Inventory ---\n")
 		total_no = 0
 		for name, items in store_dict.items():
-			return f"\n{name}: Price = {items['price']}, Quantity = {items['quantity']}"
-			total_no +=1
+			current
+			total_no += 1
+		print( f"\n{name}: Price = {items['price']}, Quantity = {items['quantity']}")
+			#total_no +=1
 		return f"\nTotal Number of product in the store is: {total_no}"
 
 
